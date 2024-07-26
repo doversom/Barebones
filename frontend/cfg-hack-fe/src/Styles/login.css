@@ -20,6 +20,7 @@
 }
 .login-input {
   margin-left: 4vw;
+  padding-left: 1em;
   width: 15vw;
   border: 1.5px solid grey;
   border-radius: 0.3em;
@@ -41,4 +42,28 @@
   padding: 8px 11px 8px 11px;
   border-radius: 5px;
   font-weight: bold;
+}
+.register-link {
+  color: grey;
+  padding-top: 2em;
+  padding-left: 4em;
+}
+.register-link-elem {
+  text-decoration: underline;
+  font-size: 0.8em;
+  color: #004277;
+}
+.loading-spinner {
+  animation-name: spin;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

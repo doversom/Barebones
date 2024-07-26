@@ -20,7 +20,9 @@ export default function App() {
     <>
       <Router>
         <div className="top-bar">
-          <div>{/* <img src={Logo} id="logo-top-bar" /> */}</div>
+          <div>
+            <img src={Logo} id="logo-top-bar" />
+          </div>
           <div
             className={
               page == 0
