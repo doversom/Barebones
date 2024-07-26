@@ -1,10 +1,10 @@
-import "./App.css";
+import "./Styles/App.css";
 import Language from "./Language";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import Title from "./Pages/Title";
-import Logo from "./logo.png";
+import Logo from "./Styles/logo.png";
 import { useState, useEffect } from "react";
 import { IoLanguage } from "react-icons/io5";
 export default function App() {
@@ -27,11 +27,15 @@ export default function App() {
                 ? "top-bar-page-selected notranslate"
                 : "top-bar-page notranslate"
             }
-            onClick={() => {
-              setPage(0);
-            }}
           >
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              onClick={() => {
+                setPage(0);
+              }}
+            >
+              Home
+            </Link>
           </div>
           <div
             className={
@@ -39,11 +43,15 @@ export default function App() {
                 ? "top-bar-page-selected notranslate"
                 : "top-bar-page notranslate"
             }
-            onClick={() => {
-              setPage(1);
-            }}
           >
-            <Link to="/title">Title</Link>
+            <Link
+              to="/title"
+              onClick={() => {
+                setPage(1);
+              }}
+            >
+              Title
+            </Link>
           </div>
           <div
             className={
@@ -51,11 +59,15 @@ export default function App() {
                 ? "top-bar-page-selected notranslate"
                 : "top-bar-page notranslate"
             }
-            onClick={() => {
-              setPage(2);
-            }}
           >
-            <Link to="/profile">Profile</Link>
+            <Link
+              to="/profile"
+              onClick={() => {
+                setPage(2);
+              }}
+            >
+              Profile
+            </Link>
           </div>
           <div id="lang-container">
             <IoLanguage className="lang-icon" color="#004277" />

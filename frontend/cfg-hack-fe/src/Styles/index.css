@@ -6,7 +6,9 @@ body {
   top: 0 !important;
   margin: 0;
 }
-select {
+select,
+button,
+input {
   font-family: "DM Sans", sans-serif;
 }
 a {

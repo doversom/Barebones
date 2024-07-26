@@ -29,7 +29,8 @@ iframe.skiptranslate {
   width: 100vw;
   height: 3em;
   align-items: center;
-  border-bottom: 1.5px solid rgb(198, 198, 198);
+  box-shadow: 0 0 5px 0px grey;
+  /* border-bottom: 1.5px solid rgb(198, 198, 198); */
 }
 .top-bar-page {
   margin-left: 3em;
