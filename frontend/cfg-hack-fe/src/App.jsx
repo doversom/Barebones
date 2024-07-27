@@ -7,6 +7,8 @@ import Title from "./Pages/Title";
 import Logo from "./Styles/logo.png";
 import { useState, useEffect } from "react";
 import { IoLanguage } from "react-icons/io5";
+import AddCourse from "./Pages/AddCourse";
+import Addcamp from "./Pages/Addcamp";
 export default function App() {
   const [page, setPage] = useState(0);
 
@@ -70,6 +72,42 @@ export default function App() {
             >
               Profile
             </Link>
+
+            
+          </div>
+          <div
+            className={
+              page == 3
+                ? "top-bar-page-selected notranslate"
+                : "top-bar-page notranslate"
+            }
+          >
+            <Link
+              to="/add-course"
+              onClick={() => {
+                setPage(3);
+              }}
+            >
+              Add Course
+            </Link>
+            
+          </div>
+          <div
+            className={
+              page == 4
+                ? "top-bar-page-selected notranslate"
+                : "top-bar-page notranslate"
+            }
+          >
+            <Link
+              to="/add-camp"
+              onClick={() => {
+                setPage(4);
+              }}
+            >
+              Add Camp
+            </Link>
+            
           </div>
           <div id="lang-container">
             <IoLanguage className="lang-icon" color="#004277" />
@@ -81,6 +119,10 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/title" element={<Title />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/add-course" element={<AddCourse />} />
+          <Route path="/add-camp" element={<Addcamp />} />
+
+          
         </Routes>
       </Router>
     </>
